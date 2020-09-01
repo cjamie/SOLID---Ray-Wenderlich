@@ -6,7 +6,9 @@ enum AnalyticsEvent {
     case addedNewAnimal(_ animal: String)
     case removedNewAnimal(_ animal: String)
     case appCrashed(_ error: Error)
-
+    
+    case newCase(_ someString: String)
+    
     var name: String {
         switch self {
         case .userPickedAnimal:
@@ -17,9 +19,11 @@ enum AnalyticsEvent {
             return "removed_animal"
         case .appCrashed:
             return "app_crashed"
+        case .newCase:
+            return "new_case"
         }
     }
-
+    
     var label: String {
         switch self {
         case .userPickedAnimal:
@@ -30,9 +34,11 @@ enum AnalyticsEvent {
             return "user_interaction"
         case .appCrashed:
             return "error"
+        case .newCase:
+            return "new_case"
         }
     }
-
+    
     var additionalProperties: [String: String] {
         switch self {
         case let .userPickedAnimal(animal):
@@ -43,6 +49,8 @@ enum AnalyticsEvent {
             return ["animal": animal]
         case let .appCrashed(cause):
             return ["cause": cause.localizedDescription]
+        case .newCase(let x):
+            return [ "new case": x]
         }
     }
 }
