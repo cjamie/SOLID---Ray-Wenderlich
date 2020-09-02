@@ -28,12 +28,22 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8613AAD623F08F9700EA84BE"
                BuildableName = "SOLID Tests.xctest"
                BlueprintName = "SOLID Tests"
+               ReferencedContainer = "container:SOLID in iOS apps.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7D6BF70124FF05B300C824D7"
+               BuildableName = "SOLID in iOS appsTests.xctest"
+               BlueprintName = "SOLID in iOS appsTests"
                ReferencedContainer = "container:SOLID in iOS apps.xcodeproj">
             </BuildableReference>
          </TestableReference>

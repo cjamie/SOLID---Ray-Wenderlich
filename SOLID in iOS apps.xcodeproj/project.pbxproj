@@ -12,6 +12,7 @@
 		185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */; };
 		185CB20323C78CE6009F7571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20123C78CE6009F7571 /* Main.storyboard */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
+		7D6BF70D24FF05EF00C824D7 /* CutePetsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6BF70C24FF05EF00C824D7 /* CutePetsLoaderTests.swift */; };
 		8613AABE23F08BE300EA84BE /* 1-SingleResponsibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613AABD23F08BE300EA84BE /* 1-SingleResponsibilityViewController.swift */; };
 		8613AAC423F08C4300EA84BE /* 2-MultipleResponsibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613AAC323F08C4300EA84BE /* 2-MultipleResponsibilityViewController.swift */; };
 		8613AAC623F08C7D00EA84BE /* 1-OpenClosedAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8613AAC523F08C7D00EA84BE /* 1-OpenClosedAnalytics.swift */; };
@@ -23,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8613AADC23F08F9700EA84BE /* PBXContainerItemProxy */ = {
+		7D6BF70724FF05B300C824D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 185CB1F023C78CE6009F7571 /* Project object */;
 			proxyType = 1;
@@ -40,6 +41,9 @@
 		185CB20223C78CE6009F7571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D6BF70224FF05B300C824D7 /* SOLID in iOS appsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLID in iOS appsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6BF70624FF05B300C824D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D6BF70C24FF05EF00C824D7 /* CutePetsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutePetsLoaderTests.swift; sourceTree = "<group>"; };
 		8613AABD23F08BE300EA84BE /* 1-SingleResponsibilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-SingleResponsibilityViewController.swift"; sourceTree = "<group>"; };
 		8613AAC323F08C4300EA84BE /* 2-MultipleResponsibilityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-MultipleResponsibilityViewController.swift"; sourceTree = "<group>"; };
 		8613AAC523F08C7D00EA84BE /* 1-OpenClosedAnalytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "1-OpenClosedAnalytics.swift"; sourceTree = "<group>"; };
@@ -47,9 +51,6 @@
 		8613AACB23F08D9100EA84BE /* LiskovLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiskovLoader.swift; sourceTree = "<group>"; };
 		8613AACD23F08DB100EA84BE /* 2-SegregatingMediaPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "2-SegregatingMediaPlayer.swift"; sourceTree = "<group>"; };
 		8613AAD123F08F3E00EA84BE /* 1-CutePetsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1-CutePetsLoader.swift"; sourceTree = "<group>"; };
-		8613AAD723F08F9700EA84BE /* SOLID Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOLID Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8613AADB23F08F9700EA84BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		864B5C1E2444A61B007B4095 /* SOLID Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOLID Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		864B5C232444D96B007B4095 /* 2-NonSolidPetsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2-NonSolidPetsLoader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +62,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8613AAD423F08F9700EA84BE /* Frameworks */ = {
+		7D6BF6FF24FF05B300C824D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				185CB1FA23C78CE6009F7571 /* SOLID */,
-				8613AAD823F08F9700EA84BE /* SOLID Tests */,
+				7D6BF70324FF05B300C824D7 /* SOLID in iOS appsTests */,
 				185CB1F923C78CE6009F7571 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				185CB1F823C78CE6009F7571 /* SOLID in iOS apps.app */,
-				8613AAD723F08F9700EA84BE /* SOLID Tests.xctest */,
+				7D6BF70224FF05B300C824D7 /* SOLID in iOS appsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +106,15 @@
 				185CB20923C78CE8009F7571 /* Info.plist */,
 			);
 			path = SOLID;
+			sourceTree = "<group>";
+		};
+		7D6BF70324FF05B300C824D7 /* SOLID in iOS appsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7D6BF70624FF05B300C824D7 /* Info.plist */,
+				7D6BF70C24FF05EF00C824D7 /* CutePetsLoaderTests.swift */,
+			);
+			path = "SOLID in iOS appsTests";
 			sourceTree = "<group>";
 		};
 		8613AABC23F08BB300EA84BE /* Single Responsibility */ = {
@@ -150,15 +160,6 @@
 			path = "Dependency Inversion";
 			sourceTree = "<group>";
 		};
-		8613AAD823F08F9700EA84BE /* SOLID Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8613AADB23F08F9700EA84BE /* Info.plist */,
-				864B5C1E2444A61B007B4095 /* SOLID Tests-Bridging-Header.h */,
-			);
-			path = "SOLID Tests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,22 +180,22 @@
 			productReference = 185CB1F823C78CE6009F7571 /* SOLID in iOS apps.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8613AAD623F08F9700EA84BE /* SOLID Tests */ = {
+		7D6BF70124FF05B300C824D7 /* SOLID in iOS appsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8613AADE23F08F9700EA84BE /* Build configuration list for PBXNativeTarget "SOLID Tests" */;
+			buildConfigurationList = 7D6BF70924FF05B300C824D7 /* Build configuration list for PBXNativeTarget "SOLID in iOS appsTests" */;
 			buildPhases = (
-				8613AAD323F08F9700EA84BE /* Sources */,
-				8613AAD423F08F9700EA84BE /* Frameworks */,
-				8613AAD523F08F9700EA84BE /* Resources */,
+				7D6BF6FE24FF05B300C824D7 /* Sources */,
+				7D6BF6FF24FF05B300C824D7 /* Frameworks */,
+				7D6BF70024FF05B300C824D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8613AADD23F08F9700EA84BE /* PBXTargetDependency */,
+				7D6BF70824FF05B300C824D7 /* PBXTargetDependency */,
 			);
-			name = "SOLID Tests";
-			productName = "SOLID Tests";
-			productReference = 8613AAD723F08F9700EA84BE /* SOLID Tests.xctest */;
+			name = "SOLID in iOS appsTests";
+			productName = "SOLID in iOS appsTests";
+			productReference = 7D6BF70224FF05B300C824D7 /* SOLID in iOS appsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -203,16 +204,15 @@
 		185CB1F023C78CE6009F7571 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
 					185CB1F723C78CE6009F7571 = {
 						CreatedOnToolsVersion = 11.3;
 					};
-					8613AAD623F08F9700EA84BE = {
-						CreatedOnToolsVersion = 11.3;
-						LastSwiftMigration = 1140;
+					7D6BF70124FF05B300C824D7 = {
+						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 185CB1F723C78CE6009F7571;
 					};
 				};
@@ -231,7 +231,7 @@
 			projectRoot = "";
 			targets = (
 				185CB1F723C78CE6009F7571 /* SOLID in iOS apps */,
-				8613AAD623F08F9700EA84BE /* SOLID Tests */,
+				7D6BF70124FF05B300C824D7 /* SOLID in iOS appsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8613AAD523F08F9700EA84BE /* Resources */ = {
+		7D6BF70024FF05B300C824D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,20 +274,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8613AAD323F08F9700EA84BE /* Sources */ = {
+		7D6BF6FE24FF05B300C824D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6BF70D24FF05EF00C824D7 /* CutePetsLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8613AADD23F08F9700EA84BE /* PBXTargetDependency */ = {
+		7D6BF70824FF05B300C824D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 185CB1F723C78CE6009F7571 /* SOLID in iOS apps */;
-			targetProxy = 8613AADC23F08F9700EA84BE /* PBXContainerItemProxy */;
+			targetProxy = 7D6BF70724FF05B300C824D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,43 +454,42 @@
 			};
 			name = Release;
 		};
-		8613AADF23F08F9700EA84BE /* Debug */ = {
+		7D6BF70A24FF05B300C824D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SOLID Tests/Info.plist";
+				DEVELOPMENT_TEAM = RNF778SHGZ;
+				INFOPLIST_FILE = "SOLID in iOS appsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.solid-in-ios.SOLID-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.askuriel.SOLID-in-iOS-appsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SOLID Tests/SOLID Tests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOLID in iOS apps.app/SOLID in iOS apps";
 			};
 			name = Debug;
 		};
-		8613AAE023F08F9700EA84BE /* Release */ = {
+		7D6BF70B24FF05B300C824D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "SOLID Tests/Info.plist";
+				DEVELOPMENT_TEAM = RNF778SHGZ;
+				INFOPLIST_FILE = "SOLID in iOS appsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raywenderlich.solid-in-ios.SOLID-Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.askuriel.SOLID-in-iOS-appsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SOLID Tests/SOLID Tests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SOLID in iOS apps.app/SOLID in iOS apps";
@@ -517,11 +517,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8613AADE23F08F9700EA84BE /* Build configuration list for PBXNativeTarget "SOLID Tests" */ = {
+		7D6BF70924FF05B300C824D7 /* Build configuration list for PBXNativeTarget "SOLID in iOS appsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8613AADF23F08F9700EA84BE /* Debug */,
-				8613AAE023F08F9700EA84BE /* Release */,
+				7D6BF70A24FF05B300C824D7 /* Debug */,
+				7D6BF70B24FF05B300C824D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

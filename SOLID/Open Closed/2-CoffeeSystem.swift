@@ -1,33 +1,66 @@
 
 import Foundation
 
-class CoffeeApp {
+protocol CoffeeMaker {
+    func prepare(_ beans: Bean)
+    func make()
+}
+
+protocol CoffeeEssentials {
+    var coffeeMaker: CoffeeMaker { get }
+    var bean: Bean { get }
+}
+
+final class CoffeeApp {
+    
+    private let essentials: CoffeeEssentials
+    
+    // MARK: - Init
+    
+    init(_ essentials: CoffeeEssentials) {
+        self.essentials = essentials
+    }
+
+    // MARK: - Public API
+
     func makeCoffeeForMe() {
-        let coffeeMaker = FilterCoffeeMaker()
-        coffeeMaker.fill(with: Bean.arabica.grind())
-        coffeeMaker.brew()
+        essentials.coffeeMaker.prepare(essentials.bean)
+        essentials.coffeeMaker.make()
     }
 }
 
-class FilterCoffeeMaker {
+class FilterCoffeeMaker: CoffeeMaker {
+    
     private let cafetiere = Cafetiere()
-
-    func fill(with groundCoffee: GroundCoffee) {
+    
+    // MARK: - CoffeeMaker
+    
+    func prepare(_ beans: Bean) {
+        cafetiere.groundCoffee = beans.grind()
+    }
+    
+    func make() {
+        cafetiere.plunge()
+    }
+    
+    // MARK: - Helpers
+    
+    private func fill(with groundCoffee: GroundCoffee) {
         cafetiere.groundCoffee = groundCoffee
     }
 
-    func brew() {
+    private func brew() {
         cafetiere.plunge()
     }
+
 }
 
-class BeanToCupMachine {
+class BeanToCupMachine: CoffeeMaker {
+    
     private var beans: Bean?
 
-    func add(_ beans: Bean) {
-        self.beans = beans
-    }
-
+    // MARK: - CoffeeMaker
+    
     func make() {
         guard let groundCoffee = beans?.grind() else {
             return
@@ -35,9 +68,32 @@ class BeanToCupMachine {
         _ = groundCoffee
         // make the coffee from the grounds
     }
+        
+    func prepare(_ beans: Bean) {
+        add(beans)
+    }
+    
+    // MARK: - Helpers
+
+    private func add(_ beans: Bean) {
+        self.beans = beans
+    }
+
 }
 
-class EspressoMachine {
+class EspressoMachine: CoffeeMaker {
+    
+    private var beans: Bean?
+    
+    func prepare(_ beans: Bean) {
+        self.beans = beans
+    }
+    
+    func make() {
+        guard let groundCoffee = beans?.grind() else { return }
+        make(from: groundCoffee)
+    }
+    
     func make(from _: GroundCoffee) {
         // yum, our coffee is nearly ready
     }
